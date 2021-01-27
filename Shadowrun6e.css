@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed');
+/* font-family: 'Open Sans', sans-serif;
+   font-family: 'Open Sans Condensed', sans-serif; */
 
 * {
     font-family: 'Open Sans', sans-serif;
@@ -10,11 +12,27 @@
     display: flex;
 }
 
+.sheet-flexcol {
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: space-around;
+    margin: 8px;
+}
+
 .sheet-player {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
+}
+
+.sheet-datasection {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border: 1px solid #800d6d;
+    padding: 8px;
+    border-radius: 12px;
 }
 
 .sheet-item {
@@ -23,8 +41,8 @@
 }
 
 .sheet-sectiontitle {
-  font-size: 18px;
-  color: #800d6d;
+    font-size: 18px;
+    color: #800d6d;
 }
 
 input {
@@ -35,6 +53,7 @@ input {
     margin: 0px;
     background: transparent;
     padding: 0px;
+    width: 24px;
 }
 
 .sheet-item input:focus {
@@ -47,17 +66,27 @@ input {
 
 .sheet-underline {
     border-bottom: 1px solid black;
-    padding: 0px 6px 2px 0px;
+    padding: 0px 6px 4px 0px;
     position: relative;
     top: 1px;
-  }
-
-.sheet-personaldata input {
-    padding-bottom: 2px;
 }
 
-.sheet-personaldata {
-    border: 1px solid #800d6d;
-    padding: 8px;
-    border-radius: 12px;
+.sheet-grey {
+    border-bottom: 1px solid black;
+    padding: 0px 6px 4px 0px;
+    position: relative;
+    top: 1px;
+    color: grey;
+}
+
+.sheet-datasection input {
+    padding-bottom: 4px;
+}
+
+.sheet-linecontainer {
+    display: flex;
+}
+
+.sheet-linecontainer .sheet-item {
+    flex-basis: 100%;
 }

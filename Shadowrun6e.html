@@ -1,25 +1,67 @@
 <div class="flexrow">
 
-    <div class="flexcol logo">
+    <div class="logo">
         <img src="https://github.com/Toomuchbob/Shadowrun6eCharacterSheet/blob/master/Shadowrun6e_logo.png?raw=true" />
     </div>
 
-    <div class="flexcol player">
-        <div class="item"><span>CHARACTER: </span><input type="text" name="attr_character_name" /></div>
-        <div class="item"><span>PLAYER: </span><input type="text" name="attr_player" /></div>
-        <div class="item"><span>NOTES: </span><input type="text" name="attr_notes" /></div>
+    <div class="player">
+        <div class="item">
+            <span>CHARACTER: </span><input type="text" name="attr_character_name" />
+        </div>
+        <div class="item">
+            <span>PLAYER: </span><input type="text" name="attr_player" />
+        </div>
+        <div class="item">
+            <span>NOTES: </span><input type="text" name="attr_notes" />
+        </div>
     </div>
 
 </div>
 
 <div class="flexrow">
 
-    <div class="flexcol personaldata">
+    <div class="flexcol leftcol">
 
-        <span class="sectiontitle">PERSONAL DATA</span>
+        <div class="datasection personaldata">
 
-        <div class="item"><span class="underline">NAME/PRIMARY ALIAS</span><input type="text"
-                name="attr_character_alias" /></div>
+            <span class="sectiontitle">PERSONAL DATA</span>
+
+            <div class="item">
+                <span class="underline">NAME/PRIMARY ALIAS</span><input type="text" name="attr_character_alias" />
+            </div>
+
+            <div class="linecontainer">
+
+                <div class="item">
+                    <span class="underline">Metatype</span><input type="text" name="attr_metatype" />
+                </div>
+                <div class="item">
+                    <span class="underline">Ethnicity</span><input type="text" name="attr_ethnicity" />
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="flexcol rightcol">
+
+        <div class="datasection corecombatinfo">
+            <span class="sectiontitle">CORE COMBAT INFO</span>
+
+            <div class="linecontainer">
+
+                <div class="item">
+                    <span class="underline">Primary Armor</span><input type="text" name="attr_primaryarmor" />
+                </div>
+                <div class="item">
+                    <span class="grey">Rating</span><input type="text" name="attr_primaryarmorrating" />
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
